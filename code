@@ -1,4 +1,5 @@
 Fraction to Decimal:
+
 import java.util.Scanner;
 class HelloWorld {
     public static void main(String[] args) {
@@ -41,3 +42,67 @@ class HelloWorld {
         
     }
 }
+
+
+Vowel or consonant:
+a=in.next().charAt(0);
+switch(Character.toLowerCase(a)
+
+
+To generate a vehicle number plate:
+Random r = new Random();
+int n = r.next(10000);
+for(int i=0;i<3;i++){
+char c = (char)(r.nextInt(26)+'a');
+SOP(Character.toUpperCase(c));
+}
+SOP(" "+n);
+
+
+Factors of a number:
+int a = sc.nextInt();
+int i=2;
+SOP("1,");
+while(a>1){
+if(a%i==0){
+SOP(i+",")
+a=a/i;
+}
+else
+i++;
+
+
+GCD main code:
+while(a>1 && b>1){
+if(a%i==0 && b%i==0){
+gcd=gcd*i;
+a=a/i;
+b=b/i;}
+else
+i++;
+
+
+Matrix count odd numbers of 1 in rows:
+Random r = new Random();
+for(int i=0;i<6;i++){
+for(int j=0;j<6;j++){
+arr[i][j] = r.nextInt(2);
+}}
+for(int i=0;i<6;i++){
+for(int j=0;j<6;j+=){
+SOPrint(arr[i][j]+" ");
+}sopln();
+int count=0;
+for(int i=0;i<6;i++){
+count = 0;
+for(int j=0;j<6;j+=){
+if(arr[i][j]==1){
+count++;}
+}}
+if(count%2!=0){
+SOP("row address:"+(i+1));}
+
+Random obj with seed
+Random r = new Random(1000);
+for(int i<0;i<50;i++){
+SOP(r.nextInt(49));}
