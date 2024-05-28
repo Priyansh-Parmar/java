@@ -1,0 +1,43 @@
+Fraction to Decimal:
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a decimal number:");
+        String s = sc.next();
+        String k = "";
+        int z,f=0,d=0, i=0;
+        while(s.charAt(i)!='.'){
+            k=k+s.charAt(i);
+            d++;
+            i++;
+        }
+        i++;
+        f=s.length()-d-1;
+        String l = "1";
+        for(z=0;z<f;z++){
+            k=k+s.charAt(i);
+            i++;
+            l=l+"0";
+        }
+        i=0;
+        f=Integer.parseInt(l);
+        d=Integer.parseInt(k);
+        while(i<f){
+            if(d%2==0 && f%2==0){
+                d=d/2;
+                f=f/2;
+            }
+            else if(d%5==0 && f%5==0){
+                d=d/5;
+                f=f/5;
+            }
+            else{
+                break;
+            }
+        }
+        System.out.println("Fraction representation:");
+        System.out.println(d+"/"+f);
+        
+    }
+}
